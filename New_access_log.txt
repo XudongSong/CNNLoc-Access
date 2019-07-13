@@ -1,0 +1,722 @@
+
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adam'>,0.1,24.122412241224122%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,456.66254901885986
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adam'>,0.01,24.122412241224122%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,467.16280579566956
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adam'>,0.001,99.09990999099911%,95.22952295229523%,17.937271777914543,11.083696145260863,22.597973831129096,494.0983531475067
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adam'>,0.0001,99.45994599459947%,94.86948694869487%,14.697951398422234,9.278941584405642,18.735867814047086,542.5486660003662
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adam'>,1e-05,97.02970297029702%,87.3987398739874%,55.15278703377156,30.332286557189377,65.41840799129342,635.9366939067841
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adagrad'>,0.1,48.51485148514851%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,521.1360642910004
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adagrad'>,0.01,100.0%,94.86948694869487%,21.739721271159244,14.484987589873501,28.512064958392237,570.9679973125458
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adagrad'>,0.001,98.73987398739874%,93.51935193519351%,32.754710019662035,17.502080613163802,39.82608645976757,618.3938572406769
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adagrad'>,0.0001,48.33483348334833%,58.95589558955896%,63.01129483130442,38.811809270318285,78.73585097455185,734.791562795639
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adagrad'>,1e-05,48.244824482448244%,11.881188118811881%,113.22013281308847,74.10995280921868,140.946880045,593.6586508750916
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adadelta'>,0.1,91.71917191719172%,11.881188118811881%,29.94129775974261,16.95398018151877,37.270224997576186,640.6617019176483
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adadelta'>,0.01,48.244824482448244%,11.881188118811881%,62.63892310105153,37.23406007256054,77.43890632619721,644.219747543335
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adadelta'>,0.001,48.244824482448244%,11.881188118811881%,121.59263730465182,65.75813155372659,141.74578729146046,693.3274600505829
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adadelta'>,0.0001,48.244824482448244%,11.881188118811881%,119.72914372323288,65.81016353815023,140.259256933082,838.6947162151337
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adadelta'>,1e-05,48.244824482448244%,11.881188118811881%,153.2070166279253,150.7105449406291,248.84846646146934,812.3696253299713
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Nadam'>,0.1,24.122412241224122%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,714.9296247959137
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Nadam'>,0.01,48.244824482448244%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,743.0048608779907
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Nadam'>,0.001,99.9099909990999%,95.4995499549955%,13.264074856769389,9.393503892989067,17.885711729908284,770.4443016052246
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Nadam'>,0.0001,99.72997299729973%,94.05940594059405%,13.52206476016459,9.057666606057694,17.80534301693079,836.6604504585266
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Nadam'>,1e-05,97.02970297029702%,93.42934293429343%,50.53321576451989,27.396950728891202,59.92288514280241,1074.3476099967957
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adamax'>,0.1,98.55985598559856%,3.5103510351035103%,552.6604619569821,427.4274915187954,709.2775514816093,824.3747289180756
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adamax'>,0.01,100.0%,92.70927092709272%,12.674553405149728,9.24990735866941,17.118256944087136,869.2232134342194
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adamax'>,0.001,99.9099909990999%,94.5994599459946%,14.670952969349019,9.913168649428082,19.209242902980364,895.6004388332367
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adamax'>,0.0001,99.54995499549955%,92.61926192619262%,19.54187645203927,12.831576021815692,25.66617239034613,1064.7116293907166
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.Adamax'>,1e-05,48.33483348334833%,11.881188118811881%,63.18107463949551,36.68158077447936,77.15088507952503,923.1517207622528
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.SGD'>,0.1,91.98919891989199%,11.881188118811881%,29.1519746440642,19.26513330896094,38.27427106404724,934.1621496677399
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.SGD'>,0.01,48.42484248424842%,11.881188118811881%,59.51841307264156,36.748157872636504,74.58387023833441,972.4485416412354
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.SGD'>,0.001,48.244824482448244%,11.881188118811881%,121.96855233756136,65.8982366644044,142.10252763575986,957.5418009757996
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.SGD'>,0.0001,48.244824482448244%,11.881188118811881%,122.7715899655429,66.165966924689,143.0301641031464,975.7329294681549
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.SGD'>,1e-05,48.244824482448244%,11.881188118811881%,115.94344931712811,74.64668435319541,143.1535545850719,1056.9594023227692
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.RMSprop'>,0.1,27.632763276327633%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,987.5411429405212
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.RMSprop'>,0.01,98.73987398739874%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,1009.1167638301849
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.RMSprop'>,0.001,99.72997299729973%,95.13951395139514%,11.15102108184738,7.771231697666066,14.781509710642396,1086.0867915153503
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.RMSprop'>,0.0001,99.72997299729973%,95.22952295229523%,26.461464236831546,9.551275051312066,29.758415421903948,1148.6714265346527
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f501511f6a8>,<class 'keras.optimizers.RMSprop'>,1e-05,50.225022502250226%,91.0891089108911%,48.668761311648396,24.738001795767275,56.93413439869593,1243.4627735614777
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adam'>,0.1,24.122412241224122%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,1094.8647000789642
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adam'>,0.01,24.122412241224122%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,1135.3943169116974
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adam'>,0.001,99.72997299729973%,11.881188118811881%,13.088567034284573,8.441881654690196,16.886088919225116,1191.3130025863647
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adam'>,0.0001,99.27992799279927%,92.52925292529252%,15.364301120909966,10.670267848039765,20.52587477389565,1311.0647439956665
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adam'>,1e-05,97.65976597659765%,90.81908190819082%,33.37617128626311,18.179496029157168,40.71489651048505,1574.3885471820831
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adagrad'>,0.1,99.18991899189919%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,1237.5203404426575
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adagrad'>,0.01,99.63996399639964%,91.8091809180918%,18.30462942772537,11.410530356626579,23.186989045761276,1280.3105444908142
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adagrad'>,0.001,97.74977497749775%,89.91899189918992%,34.420436120224174,18.367639016923366,42.20948035374804,1581.2489085197449
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adagrad'>,0.0001,48.244824482448244%,16.111611161116112%,61.787893936550454,37.30575507571611,77.05366556097124,1295.4881830215454
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adagrad'>,1e-05,48.244824482448244%,11.881188118811881%,117.91151580123251,73.1072044591784,143.35989636950467,1380.8465485572815
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adadelta'>,0.1,24.122412241224122%,15.48154815481548%,27.958173114456578,18.389079834425925,36.55423756888316,1343.6909873485565
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adadelta'>,0.01,24.122412241224122%,11.881188118811881%,61.982097787876015,33.57716964500932,74.21076268746567,1327.2616314888
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adadelta'>,0.001,48.244824482448244%,11.881188118811881%,137.0357155086328,69.75468667459604,157.8489522936346,1446.268257856369
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adadelta'>,0.0001,48.244824482448244%,11.881188118811881%,115.75085906200884,68.17609487378736,138.29372742640317,982.1273152828217
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Adadelta'>,1e-05,48.244824482448244%,11.881188118811881%,150.91082731433178,149.118735759711,246.5200759048322,999.4514274597168
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Nadam'>,0.1,24.122412241224122%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,985.2892067432404
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Nadam'>,0.01,24.122412241224122%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,1023.5781455039978
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Nadam'>,0.001,99.09990999099911%,89.1989198919892%,15.169070962699339,11.6865141171506,20.653196606448876,1071.5844271183014
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f501511f730>,<class 'keras.optimizers.Nadam'>,0.0001,99.36993699369937%,94.95949594959497%,13.335593303081769,9.381435786289247,17.87557684239318,1117.2204248905182
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adam'>,0.005,99.63996399639964%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,330.90074038505554
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adam'>,0.001,99.72997299729973%,41.22412241224123%,552.6604619569821,427.4274915187954,709.2775514816093,373.7284746170044
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adam'>,0.0005,99.72997299729973%,94.95949594959497%,8.425750375430978,7.775381279665001,12.640937296280137,276.7910850048065
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adam'>,0.0001,99.54995499549955%,95.22952295229523%,13.7461063372662,9.257933772599088,17.880462523862807,408.93729519844055
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adagrad'>,0.05,99.72997299729973%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,353.605863571167
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adagrad'>,0.01,99.36993699369937%,15.48154815481548%,30.339683308219993,17.437851441594916,38.025749793430094,366.4611015319824
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adagrad'>,0.005,99.72997299729973%,95.31953195319532%,47.81180829005345,24.498494322306932,56.17061573567599,409.34887313842773
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adagrad'>,0.001,99.72997299729973%,94.32943294329434%,28.56973374824803,20.200148921493444,38.06649925944621,331.5401692390442
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Nadam'>,0.005,94.86948694869487%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,442.21662306785583
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Nadam'>,0.001,99.81998199819982%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,600.0918405056
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Nadam'>,0.0005,99.72997299729973%,95.31953195319532%,9.779472055274109,8.522049032585926,14.28850431061202,466.8193128108978
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Nadam'>,0.0001,99.72997299729973%,95.22952295229523%,11.60164846825523,7.708652618930454,15.076700733549592,467.1794774532318
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adamax'>,0.05,91.8091809180918%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,519.189361333847
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adamax'>,0.01,99.63996399639964%,77.58775877587759%,9.322148734324854,7.797913718383515,13.469028420953158,357.31949973106384
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adamax'>,0.005,99.09990999099911%,94.68946894689469%,8.473339595336297,6.563018962410618,11.785251316084652,311.1202983856201
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.Adamax'>,0.001,99.72997299729973%,94.5994599459946%,15.966729201437701,11.427068939404,21.309747085511525,553.7763228416443
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.RMSprop'>,0.005,99.18991899189919%,3.5103510351035103%,552.6604619569821,427.4274915187954,709.2775514816093,308.6160178184509
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.RMSprop'>,0.001,99.72997299729973%,93.51935193519351%,10.553645535718362,7.061981878497384,13.828898289448302,329.51053071022034
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.RMSprop'>,0.0005,99.63996399639964%,95.31953195319532%,10.615085543988814,7.313316131976343,14.046125270592789,346.8323566913605
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f145075f6a8>,<class 'keras.optimizers.RMSprop'>,0.0001,99.72997299729973%,95.04950495049505%,17.12315744741003,9.742279095459532,20.955603600119453,322.167277097702
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f145075f730>,<class 'keras.optimizers.Adam'>,0.005,48.244824482448244%,3.5103510351035103%,552.6604619569821,427.4274915187954,709.2775514816093,322.83587551116943
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f145075f730>,<class 'keras.optimizers.Adam'>,0.001,99.63996399639964%,15.48154815481548%,11.146372628320016,6.838910901211504,14.405272489527247,639.2873697280884
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f145075f730>,<class 'keras.optimizers.Adam'>,0.0005,99.54995499549955%,41.584158415841586%,10.594225486669432,7.938266508640012,14.495467643662357,351.57893681526184
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f145075f730>,<class 'keras.optimizers.Adam'>,0.0001,99.09990999099911%,91.44914491449146%,14.605202164546917,9.278726958140771,18.78432609556896,379.4550287723541
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adam'>,0.005,96.39963996399639%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,199.18031334877014
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adam'>,0.001,99.36993699369937%,41.584158415841586%,16.840485045775342,11.798145742602411,22.319868411711806,180.9008903503418
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adam'>,0.0005,99.18991899189919%,41.584158415841586%,10.67184259185876,7.298167556742228,14.041335139029735,197.06686162948608
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adam'>,0.0001,99.54995499549955%,92.34923492349235%,13.365937074143702,9.968422049876137,18.242773218907498,229.6211280822754
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adagrad'>,0.05,99.18991899189919%,27.542754275427544%,552.6604619569821,427.4274915187954,709.2775514816093,197.70095682144165
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adagrad'>,0.01,99.45994599459947%,90.999099909991%,552.6604619569821,427.4274915187954,709.2775514816093,248.58585453033447
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adagrad'>,0.005,99.54995499549955%,92.25922592259226%,17.690478824904954,10.668187052435657,22.777133295693076,251.98403072357178
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adagrad'>,0.001,99.09990999099911%,91.71917191719172%,46.13936410549146,23.58433816935381,54.323814595238055,282.25937843322754
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Nadam'>,0.005,27.632763276327633%,27.542754275427544%,552.6604619569821,427.4274915187954,709.2775514816093,274.2967813014984
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Nadam'>,0.001,100.0%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,281.8073523044586
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Nadam'>,0.0005,99.81998199819982%,41.584158415841586%,8.558317381707514,6.982987625388601,12.03934012588603,303.1524872779846
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Nadam'>,0.0001,99.45994599459947%,91.8091809180918%,14.961260949652287,9.281616311830499,19.0805737835708,362.3496334552765
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adamax'>,0.05,99.27992799279927%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,294.91504287719727
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adamax'>,0.01,99.36993699369937%,59.4059405940594%,10.952883424667016,7.751749916827016,14.683750253920905,370.4267957210541
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adamax'>,0.005,97.83978397839785%,15.48154815481548%,9.851816907940155,8.947904005185654,14.499689695039716,379.10125613212585
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.Adamax'>,0.001,99.63996399639964%,92.52925292529252%,13.579699396091794,8.675965116846331,17.299531131668683,403.8531184196472
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.RMSprop'>,0.005,99.00990099009901%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,404.8841381072998
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.RMSprop'>,0.001,99.9099909990999%,88.92889288928892%,11.136353195006263,14.110784684092437,20.009994797178784,415.1921536922455
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.RMSprop'>,0.0005,99.72997299729973%,90.27902790279028%,10.989799914436547,7.497135807997291,14.485812004767006,471.5182297229767
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_error at 0x7f9823e2c730>,<class 'keras.optimizers.RMSprop'>,0.0001,99.54995499549955%,91.8091809180918%,16.77317628725207,13.067569241936978,23.289177359503928,501.943482875824
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adam'>,0.005,99.72997299729973%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,479.5935184955597
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adam'>,0.001,99.36993699369937%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,493.9782271385193
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adam'>,0.0005,99.72997299729973%,90.1890189018902%,552.6604619569821,427.4274915187954,709.2775514816093,581.9212989807129
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adam'>,0.0001,99.63996399639964%,92.25922592259226%,162.08281980096493,156.57735650529406,258.0310024774868,572.2579882144928
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adagrad'>,0.05,98.91989198919892%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,554.6823711395264
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adagrad'>,0.01,99.72997299729973%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,545.7101194858551
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adagrad'>,0.005,99.45994599459947%,95.13951395139514%,162.57051488633422,155.64351312095562,257.8716240961898,644.4692709445953
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adagrad'>,0.001,99.09990999099911%,92.07920792079209%,162.19487968859434,155.33568233787733,257.67680108800437,444.06659054756165
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Nadam'>,0.005,93.96939693969398%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,590.9183623790741
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Nadam'>,0.001,99.54995499549955%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,662.0663802623749
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Nadam'>,0.0005,99.72997299729973%,90.45904590459047%,552.6604619569821,427.4274915187954,709.2775514816093,715.1990389823914
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Nadam'>,0.0001,99.63996399639964%,92.34923492349235%,161.84413377415913,156.54765353499704,257.8606485453635,677.4618153572083
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adamax'>,0.05,99.18991899189919%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,696.7738447189331
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adamax'>,0.01,99.54995499549955%,79.20792079207921%,552.6604619569821,427.4274915187954,709.2775514816093,693.2760791778564
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adamax'>,0.005,98.28982898289829%,87.75877587758775%,212.9312593980543,188.38608737838138,309.87809000507445,783.4324507713318
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.Adamax'>,0.001,99.27992799279927%,90.27902790279028%,162.44728461658713,156.38788755839937,258.06991268271963,807.6040947437286
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.RMSprop'>,0.005,98.82988298829883%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,525.4991173744202
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.36993699369937%,89.64896489648964%,146.54579071536645,174.34738350799432,262.6999291720622,553.1678590774536
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.RMSprop'>,0.0005,99.81998199819982%,90.27902790279028%,162.22232935738933,152.5218621739794,255.33792976739412,565.1987819671631
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_absolute_percentage_error at 0x7f9823e2c7b8>,<class 'keras.optimizers.RMSprop'>,0.0001,99.72997299729973%,91.71917191719172%,162.23301397077253,156.29652842248578,257.93935432371956,593.6867365837097
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adam'>,0.005,100.0%,27.542754275427544%,552.6604619569821,427.4274915187954,709.2775514816093,594.6050028800964
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adam'>,0.001,99.27992799279927%,14.221422142214221%,10.248438089791488,6.878093486197433,13.488068005572154,618.1731586456299
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adam'>,0.0005,99.9099909990999%,94.86948694869487%,11.25549002423962,8.968408128722805,16.056560525100743,638.7277941703796
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adam'>,0.0001,99.54995499549955%,95.04950495049505%,12.351149275330165,9.125685235710092,16.71540749889952,669.4442226886749
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adagrad'>,0.05,48.244824482448244%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,645.5851047039032
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adagrad'>,0.01,99.72997299729973%,11.881188118811881%,551.4186379210629,426.68761753139665,707.8600872210637,661.5999531745911
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adagrad'>,0.005,99.9099909990999%,94.95949594959497%,14.052773223444957,11.62221586413876,19.760284557456167,692.6968522071838
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adagrad'>,0.001,98.64986498649864%,95.04950495049505%,29.328706827967913,17.88819445072632,36.56995505852087,708.5902054309845
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Nadam'>,0.005,27.632763276327633%,3.5103510351035103%,552.658249528708,427.4261413837819,709.2748777098857,727.5571131706238
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Nadam'>,0.001,99.9099909990999%,27.542754275427544%,552.6604619569821,427.4274915187954,709.2775514816093,741.7898972034454
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Nadam'>,0.0005,99.72997299729973%,95.04950495049505%,8.779609072482089,7.734955867385269,12.681439354906335,777.7263958454132
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Nadam'>,0.0001,99.9099909990999%,94.68946894689469%,12.131100687122785,8.839808462826413,16.342022598132665,819.6546256542206
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adamax'>,0.05,99.9099909990999%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,809.7143445014954
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adamax'>,0.01,99.00990099009901%,74.16741674167416%,11.148605095208072,7.72827457510183,14.837094976654116,813.0888903141022
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adamax'>,0.005,99.27992799279927%,92.07920792079209%,9.601247556571137,6.990061030080199,12.870400274892413,842.4399263858795
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.Adamax'>,0.001,99.45994599459947%,94.5994599459946%,14.480023518798335,10.710028083372984,19.45403433286445,874.5345728397369
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f9823e2c840>,<class 'keras.optimizers.RMSprop'>,0.005,98.37983798379838%,27.542754275427544%,552.6604619569821,427.4274915187954,709.2775514816093,1040.112072467804
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adam'>,0.005,99.72997299729973%,41.584158415841586%,60796.58809429512,49888.49645087544,78645.54454511765,184.339453458786
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adam'>,0.001,99.9099909990999%,93.6993699369937%,1911.4873527756629,686.6818694172982,2033.6500789184488,194.76252484321594
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adam'>,0.0005,99.63996399639964%,91.71917191719172%,1692.9225884867342,1046.9176929996565,1993.863048880936,222.35807609558105
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adam'>,0.0001,99.72997299729973%,94.23942394239424%,440.3836740972484,268.7903302633828,529.9791103857622,229.2545690536499
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adagrad'>,0.05,99.72997299729973%,11.881188118811881%,424191.589465526,117741.15126635699,440229.7680756592,220.47228503227234
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adagrad'>,0.01,99.72997299729973%,92.7992799279928%,3276.4234947297027,1643.7813293632928,3667.1105859937006,244.1474039554596
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adagrad'>,0.005,99.72997299729973%,93.06930693069307%,590.6646779788865,348.63596482683914,695.4136467938166,258.72737669944763
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adagrad'>,0.001,99.81998199819982%,93.87938793879388%,388.12277369080147,205.92129335969244,455.2091849392092,252.8863182067871
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Nadam'>,0.005,99.9099909990999%,15.48154815481548%,4869.403621990475,2557.49105033539,5501.642307545389,271.1176314353943
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Nadam'>,0.001,99.63996399639964%,15.48154815481548%,1381.5667127624429,767.5779090212586,1584.5087197567757,288.6862461566925
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Nadam'>,0.0005,100.0%,94.14941494149414%,505.272349927722,394.34298552890937,653.0209816689044,318.12324714660645
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Nadam'>,0.0001,99.54995499549955%,94.5994599459946%,391.41026410976525,226.84298552890937,468.3144348566202,329.7367558479309
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adamax'>,0.05,99.45994599459947%,11.881188118811881%,12434611.222650718,3367165.847485979,12882470.55423758,326.8390197753906
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adamax'>,0.01,99.81998199819982%,90.45904590459047%,12918.950395906148,11242.508602090566,17126.071632318177,346.27161955833435
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adamax'>,0.005,99.45994599459947%,94.77947794779477%,8960.758861323004,6342.826333863743,10979.029179328896,346.6500680446625
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.Adamax'>,0.001,99.72997299729973%,92.43924392439244%,1072.614788468451,699.9797992102775,1286.3051932100138,368.3761565685272
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.RMSprop'>,0.005,99.36993699369937%,27.542754275427544%,4485.954912617584,6055.010852315588,7536.622002547259,367.03093242645264
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,94.05940594059405%,3092.418259001051,2078.6328145118077,3727.9680553502476,404.850218296051
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.RMSprop'>,0.0005,99.72997299729973%,94.95949594959497%,538.97536856943,437.19897112746924,705.4781708191132,414.20317673683167
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function kullback_leibler_divergence at 0x7fdeba4b9c80>,<class 'keras.optimizers.RMSprop'>,0.0001,99.63996399639964%,93.96939693969398%,402.6456161117623,239.01220245060154,483.71130788457305,447.4094429016113
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adam'>,0.005,99.09990999099911%,27.542754275427544%,1242846.995377992,889779.8960908394,1528521.1580831904,179.2351472377777
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adam'>,0.001,99.72997299729973%,11.881188118811881%,138964.74802200668,72131.2817794083,156569.94614178175,191.8948175907135
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adam'>,0.0005,99.9099909990999%,94.86948694869487%,122677.55480502872,56792.788080038365,135185.87458340684,202.39896273612976
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adam'>,0.0001,99.36993699369937%,91.44914491449146%,123176.37790921413,50056.52480371072,132958.98498168966,206.01789450645447
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adagrad'>,0.05,27.632763276327633%,15.48154815481548%,690348.2872321777,389628.4806993003,792712.0777204229,205.41874289512634
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adagrad'>,0.01,99.72997299729973%,15.48154815481548%,89181.30386274698,40631.57070830118,98001.21373937406,221.98219966888428
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adagrad'>,0.005,99.45994599459947%,95.4995499549955%,83717.40319611781,39749.115712801635,92674.74252969211,256.0035674571991
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adagrad'>,0.001,98.91989198919892%,91.8991899189919%,93978.15904670287,40670.93434466482,102401.35585271376,250.4397840499878
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Nadam'>,0.005,27.632763276327633%,27.542754275427544%,100168.52273932213,56277.88348957932,114895.36472497898,275.8015100955963
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Nadam'>,0.001,99.72997299729973%,11.881188118811881%,930768.7244508996,189714.21067229757,949906.2728677274,276.68221831321716
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Nadam'>,0.0005,100.0%,93.60936093609361%,149217.4801538136,68070.39429065942,164010.5275291521,322.17561531066895
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Nadam'>,0.0001,99.09990999099911%,95.5895589558956%,123233.31062045401,48349.12021325168,132378.68847910684,323.44514298439026
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adamax'>,0.05,99.9099909990999%,13.051305130513052%,1806939.3708280372,1210840.7120224324,2175125.2163672424,301.3977916240692
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adamax'>,0.01,99.27992799279927%,85.5085508550855%,350121.25831678614,221435.11481271163,414268.531112883,274.97388648986816
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adamax'>,0.005,99.72997299729973%,94.50945094509451%,121600.59298150262,56838.568458076166,134228.67962306942,275.9585430622101
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.Adamax'>,0.001,99.45994599459947%,90.9090909090909%,129810.72292496571,58428.1620674371,142354.11468324132,307.9780066013336
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.RMSprop'>,0.005,99.45994599459947%,41.584158415841586%,149032.95768672312,60410.29753098345,160811.18825601335,300.4424726963043
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.RMSprop'>,0.001,99.9099909990999%,95.4995499549955%,188265.57917074653,79742.05810704106,204457.18459207844,345.3793115615845
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.RMSprop'>,0.0005,99.72997299729973%,95.04950495049505%,143666.13192445942,53778.82633386374,153401.92771419242,427.783563375473
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function squared_hinge at 0x7f6e34d8b8c8>,<class 'keras.optimizers.RMSprop'>,0.0001,99.63996399639964%,95.4995499549955%,118002.54494623031,57813.313282558614,131403.9309142324,434.0637185573578
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adam'>,0.005,99.27992799279927%,11.881188118811881%,58385276.277653,55996287.10221145,91236765.28940673,427.1520504951477
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adam'>,0.001,99.72997299729973%,91.62916291629163%,552.6604619569821,427.4274915187954,709.2775514816093,497.7665514945984
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adam'>,0.0005,99.54995499549955%,93.87938793879388%,303399.3641819625,524281.01175240555,659723.2290068583,455.67090106010437
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adam'>,0.0001,99.36993699369937%,93.6993699369937%,564.8974788207327,338.7826794983063,677.2041345529681,391.3146221637726
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adagrad'>,0.05,27.632763276327633%,41.584158415841586%,2201919.0133797927,3202899.246225853,4426785.897196118,372.2466332912445
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adagrad'>,0.01,99.54995499549955%,92.16921692169217%,552.6594410052775,427.4274915187954,709.2767602006813,595.8229508399963
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adagrad'>,0.005,99.81998199819982%,94.32943294329434%,3015.270067839161,4373.3101322435805,6137.336746311541,611.2367904186249
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adagrad'>,0.001,98.73987398739874%,93.87938793879388%,62.923625385664444,53.66381743930877,89.4007247256102,608.4714424610138
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Nadam'>,0.005,99.72997299729973%,27.542754275427544%,205904495.29567054,182443462.7213624,306103077.6712666,621.7490112781525
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Nadam'>,0.001,99.63996399639964%,41.584158415841586%,12929339.914510531,18784048.81508274,25578581.287933044,633.4662342071533
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Nadam'>,0.0005,99.72997299729973%,93.96939693969398%,77825.50465072127,81570.00680191054,128665.13028961178,657.0156753063202
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Nadam'>,0.0001,99.63996399639964%,93.60936093609361%,529.9171870265417,925.008936618298,1128.4932633090361,518.1534168720245
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adamax'>,0.05,99.63996399639964%,15.48154815481548%,1894844449.2372835,1522393908.409967,2721575546.222262,516.1700613498688
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adamax'>,0.01,99.54995499549955%,90.81908190819082%,3001521.170532514,2368393.250276258,4295810.956050636,538.2954347133636
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adamax'>,0.005,99.63996399639964%,93.42934293429343%,348135.3330204661,119309.76247207719,369361.8636985828,774.8745222091675
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.Adamax'>,0.001,99.9099909990999%,91.53915391539154%,271.853814159661,279.41964771357993,434.8389164241648,830.5711524486542
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.RMSprop'>,0.005,99.45994599459947%,3.5103510351035103%,6261190982.284758,5330020329.474849,9370266588.02832,800.9789707660675
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.RMSprop'>,0.001,100.0%,93.15931593159316%,4653052.605998737,3643524.1872699573,6550959.052384205,843.9802446365356
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.RMSprop'>,0.0005,99.63996399639964%,92.52925292529252%,950883.1880674764,921657.953433954,1522520.1800826753,860.3548667430878
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function categorical_crossentropy at 0x7f6e34d8bae8>,<class 'keras.optimizers.RMSprop'>,0.0001,99.45994599459947%,94.23942394239424%,12557.141046238823,16199.73311434943,23522.16038245909,919.0503108501434
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adam'>,0.005,99.72997299729973%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,879.1669073104858
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adam'>,0.001,99.81998199819982%,92.7992799279928%,552.6604619569821,427.4274915187954,709.2775514816093,954.894416809082
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adam'>,0.0005,99.81998199819982%,93.78937893789379%,552.6604619569821,427.4274915187954,709.2775514816093,978.8110108375549
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adam'>,0.0001,99.54995499549955%,94.50945094509451%,552.6604619569821,427.4274915187954,709.2775514816093,987.0777802467346
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adagrad'>,0.05,99.72997299729973%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,990.9968299865723
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adagrad'>,0.01,99.72997299729973%,92.70927092709272%,552.6599811471823,427.4274915187954,709.277181220861,1039.061175584793
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adagrad'>,0.005,99.72997299729973%,93.96939693969398%,552.6604619569821,427.4274915187954,709.2775514816093,959.5000092983246
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adagrad'>,0.001,99.00990099009901%,91.98919891989199%,552.6604619569821,427.4274915187954,709.2775514816093,1100.3464200496674
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Nadam'>,0.005,99.9099909990999%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,917.9500749111176
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Nadam'>,0.001,99.72997299729973%,93.51935193519351%,552.6604619569821,427.4274915187954,709.2775514816093,1122.3770558834076
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Nadam'>,0.0005,99.72997299729973%,91.8991899189919%,552.6604619569821,427.4274915187954,709.2775514816093,1203.8871140480042
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Nadam'>,0.0001,99.72997299729973%,94.23942394239424%,552.6604619569821,427.4274915187954,709.2775514816093,1275.139904975891
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adamax'>,0.05,99.54995499549955%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,1182.7452065944672
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adamax'>,0.01,99.00990099009901%,91.71917191719172%,552.6604619569821,427.4274915187954,709.2775514816093,1227.7062211036682
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adamax'>,0.005,99.45994599459947%,93.33933393339335%,552.6604619569821,427.4274915187954,709.2775514816093,1267.413675069809
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.Adamax'>,0.001,99.63996399639964%,94.32943294329434%,552.6604619569821,427.4274915187954,709.2775514816093,1305.4502034187317
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.RMSprop'>,0.005,99.45994599459947%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,1273.3197042942047
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,91.17911791179118%,552.6604619569821,427.4274915187954,709.2775514816093,1415.071237564087
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.RMSprop'>,0.0005,99.72997299729973%,91.98919891989199%,552.6604619569821,427.4274915187954,709.2775514816093,1404.418850660324
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function poisson at 0x7f6e34d8bd08>,<class 'keras.optimizers.RMSprop'>,0.0001,99.63996399639964%,94.32943294329434%,552.6604619569821,427.4274915187954,709.2775514816093,1425.0783948898315
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f52bb5db840>,<class 'keras.optimizers.RMSprop'>,0.005,99.36993699369937%,41.584158415841586%,552.6604619569821,427.4274915187954,709.2775514816093,481.020201921463
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f52bb5db840>,<class 'keras.optimizers.RMSprop'>,0.001,99.27992799279927%,96.03960396039604%,12.886077463217175,10.17469609315523,18.105083873410795,551.5597491264343
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f52bb5db840>,<class 'keras.optimizers.RMSprop'>,0.0005,99.72997299729973%,94.50945094509451%,8.775349151037606,7.27907902336806,12.60998875143422,517.4933211803436
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f52bb5db840>,<class 'keras.optimizers.RMSprop'>,0.0001,99.63996399639964%,95.5895589558956%,16.653285886902623,11.716464374172498,21.87165495169279,528.1042807102203
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.Adadelta'>,10,98.91989198919892%,3.5103510351035103%,552.6604619569821,427.4274915187954,709.2775514816093,499.30714654922485
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.Adadelta'>,5,96.75967596759676%,15.48154815481548%,552.6604619569821,427.4274915187954,709.2775514816093,478.5684394836426
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.Adadelta'>,1,99.36993699369937%,94.68946894689469%,24.08092394933574,14.575387806714614,30.25761949882343,574.7901542186737
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.Adadelta'>,0.5,98.10981098109811%,93.33933393339335%,22.9153702738108,13.077052460550846,28.14939798543876,592.7688446044922
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.SGD'>,10,24.122412241224122%,11.881188118811881%,552.6604619569821,427.4274915187954,709.2775514816093,481.90951919555664
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.SGD'>,5,24.122412241224122%,15.48154815481548%,nan,nan,nan,502.0141146183014
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.SGD'>,1,77.31773177317733%,40.864086408640865%,nan,nan,nan,518.7108693122864
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f37150956a8>,<class 'keras.optimizers.SGD'>,0.5,67.50675067506751%,65.25652565256526%,552.6604619569821,427.4274915187954,709.2775514816093,574.494833946228
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f1ee1fbf950>,<class 'keras.optimizers.RMSprop'>,0.0007,99.72997299729973%,94.68946894689469%,9.597650924808176,6.5709108771382425,12.687531204177525,142.64017987251282
+
+    b = 2.8
+    p = 3
+    epoch_sae = 40
+    epoch_floor = 40
+    epoch_position = 60
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.RMSprop'>,0.0007,99.72997299729973%,94.77947794779477%,15.62814432342149,10.390403749716311,20.342602145130794,169.18952751159668
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.RMSprop'>,0.0008,99.63996399639964%,93.6993699369937%,12.113015188771664,7.974300859039976,15.802771661970073,161.47806882858276
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.RMSprop'>,0.0009,99.27992799279927%,92.07920792079209%,12.325826898059859,7.885939802515089,15.912908467779554,165.04442882537842
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.RMSprop'>,0.001,99.45994599459947%,94.77947794779477%,10.036333465652858,7.5694536189628305,13.721484171162967,184.60172843933105
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.Adamax'>,0.005,99.36993699369937%,93.06930693069307%,9.351737290763896,7.057968097582164,12.867570223648896,200.143483877182
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.Adamax'>,0.006,98.73987398739874%,92.25922592259226%,10.373647956418953,7.7133810376408105,14.19446724246036,206.08091735839844
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.Adamax'>,0.007,99.09990999099911%,90.72907290729073%,8.27109754341738,6.877064524590634,11.856125508342897,199.1016366481781
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.Adamax'>,0.008,98.82988298829883%,94.23942394239424%,12.28173338989939,11.249406972519456,18.643934210972777,218.43373084068298
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_logarithmic_error at 0x7f75b8bf1950>,<class 'keras.optimizers.Adamax'>,0.009,99.72997299729973%,91.8991899189919%,9.585638734414355,7.439320755562503,13.294559612097014,226.13140869140625
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.RMSprop'>,0.0007,99.45994599459947%,95.22952295229523%,11.49942372362147,6.944399807070702,14.612547154775376,227.8821747303009
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.RMSprop'>,0.0008,99.72997299729973%,94.5994599459946%,10.690639775081463,8.302421276498682,14.684040694246647,246.20966863632202
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.RMSprop'>,0.0009,99.36993699369937%,91.62916291629163%,10.59610115235831,6.572987215613576,13.582417068788427,267.3691234588623
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.RMSprop'>,0.001,100.0%,95.13951395139514%,8.528101417364988,6.704320928281379,11.854859503208266,264.72859716415405
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.Adamax'>,0.005,99.45994599459947%,93.6993699369937%,8.401619860984404,7.344870316396148,12.340975210238803,295.1373326778412
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.Adamax'>,0.006,99.9099909990999%,94.32943294329434%,17.40366319525894,8.289191672389004,20.706681235511724,282.0749945640564
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.Adamax'>,0.007,100.0%,95.04950495049505%,11.870223464904054,9.705202576814138,16.711386292718466,301.34453678131104
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.Adamax'>,0.008,99.54995499549955%,92.34923492349235%,9.790928600576098,11.835163276756566,16.78397943548263,311.60879254341125
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f75b8bf17b8>,<class 'keras.optimizers.Adamax'>,0.009,99.45994599459947%,94.95949594959497%,16.851622933454426,7.008527888047142,19.53612448432368,310.37104320526123
+
+    b = 2.8
+    p = 3
+    epoch_sae = 60
+    epoch_floor = 60
+    epoch_building = 60
+    epoch_position = 80
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.18991899189919%,94.32943294329434%,12.137086496294465,9.391791118194897,16.97133787464304,161.71889114379883
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.45994599459947%,92.25922592259226%,11.635169996704514,10.011782321758723,16.966471298840876,164.94583702087402
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,95.31953195319532%,10.091524408976017,8.57133501823606,14.466268338936313,173.20448184013367
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.72997299729973%,93.6993699369937%,9.324084337275771,7.675461492765256,13.2330353700331,181.56851053237915
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.36993699369937%,94.77947794779477%,12.242308058421207,8.101231153398873,15.920375245289376,188.52193522453308
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fa09922c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.54995499549955%,94.68946894689469%,8.95884971063985,7.342693345956538,12.674336928705936,215.47454380989075
+
+    b = 2.8
+    p = 3
+    epoch_sae = 60
+    epoch_floor = 60
+    epoch_building = 60
+    epoch_position = 80
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.9099909990999%,94.14941494149414%,11.78562556168156,8.235718322262288,15.725871813948677,176.11291909217834
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.RMSprop'>,0.001,100.0%,92.97929792979298%,11.423691105492493,8.781475068163044,15.616378046736733,181.43639183044434
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,94.32943294329434%,10.167847365738291,8.612925100461332,14.556194223113868,195.01300716400146
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.81998199819982%,94.23942394239424%,11.276197350513062,9.295245161323626,16.014220063453955,200.9488627910614
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.63996399639964%,93.6993699369937%,11.18552247610193,7.995251555007511,15.023833858647867,210.59663891792297
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f793bc6f7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.63996399639964%,94.23942394239424%,9.148916380445934,8.80575700255629,14.047790409079058,227.26696157455444
+
+    b = 2.8
+    p = 3
+    epoch_sae = 60
+    epoch_floor = 60
+    epoch_building = 60
+    epoch_position = 80
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,95.13951395139514%,10.769538923523138,8.383039533213438,14.779218741720063,182.05279302597046
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,100.0%,93.96939693969398%,10.401688359460584,9.046175322561625,15.114058002819911,183.84923219680786
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.63996399639964%,95.4995499549955%,11.537114276691785,9.046975482897338,16.16378088334314,191.08949780464172
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.81998199819982%,93.96939693969398%,9.789173346033316,8.895972080553884,14.59722433195006,202.27776527404785
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.63996399639964%,93.42934293429343%,11.870531071021363,8.832306554462194,16.340902234800158,213.55620312690735
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7fbc4a41c7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.45994599459947%,92.7992799279928%,10.052986287744947,7.911584524682561,14.021577254768216,227.89916896820068
+
+    b = 2.8
+    p = 3
+    epoch_sae = 60
+    epoch_floor = 60
+    epoch_building = 60
+    epoch_position = 80
+    dp = 0.7
+    
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,94.77947794779477%,14.125393969046618,8.369079722834266,17.75108129720621,157.21808505058289
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.81998199819982%,94.95949594959497%,10.60544215650877,8.299345581814928,14.725066275550425,159.8537094593048
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.RMSprop'>,0.001,99.54995499549955%,95.04950495049505%,10.89698784207395,8.509617497894702,15.156823727551526,164.16259789466858
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.Adamax'>,0.005,100.0%,93.06930693069307%,9.950027565791741,7.753887114234932,13.76750595812404,171.68292784690857
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.72997299729973%,93.15931593159316%,9.83180262597703,7.549261052954463,13.463477022859296,179.63620734214783
+loss,opt,lr,b_hr,f_hr,pos_longi_err,pos_lati_err,mean_err,time
+<function mean_squared_error at 0x7f4550c6b7b8>,<class 'keras.optimizers.Adamax'>,0.005,99.81998199819982%,92.16921692169217%,10.731888731721996,7.898742278085554,14.638620212466003,189.9300093650818
+
